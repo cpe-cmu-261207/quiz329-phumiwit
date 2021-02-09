@@ -7,13 +7,16 @@ function App() {
   //load locationStorage
   useEffect(() => {
     const items = localStorage.getItem("items");
+
     // ...
   }, []);
 
   return (
     <div className="card" style={{ width: 400 }}>
       <div className="card-content">
+        <itemTable />
         <p className="is-4 title has-text-centered">Add Person</p>
+
         <div className="field">
           <label className="label">Name</label>
           <input
@@ -47,8 +50,10 @@ function App() {
         {/* display tables for all persons */}
         <p className="is-4 title has-text-centered">Person List</p>
         {/* sample table */}
+        <returninput />
         <ItemTable name={"Bob"} gender={"Male"} age={"50"} />
         <p>Your name and code here</p>
+        <p>phumiwit 620612160 </p>
       </div>
     </div>
   );
